@@ -67,12 +67,12 @@ $("button").on("click", searchPrototype);
 
 function jsonFlickrFeed(json) {
   console.log(json);
-  
+  //I sort of understand the code below but not entirely
   $.each(json.items, function(i, item) {
     $("<img />").attr("src", item.media.m).appendTo("#images");
   });
 };
-
+//I understand the code below to modify enough to make it work for me. 
 function searchPrototype() {
   $(".s-button").remove();
   
